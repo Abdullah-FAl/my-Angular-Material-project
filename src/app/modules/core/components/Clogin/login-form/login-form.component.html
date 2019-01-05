@@ -1,0 +1,42 @@
+
+
+<form   [formGroup]="_LoginForm" (ngSubmit)="onSubmit()"   fxLayout="column" fxLayoutAlign="space-between center" fxLayoutGap="15px">
+
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="15px" >
+  <mat-icon>
+      person
+  </mat-icon>
+    <mat-form-field class="wth100">
+
+        <input class="wth100" type="text" formControlName="username" matInput placeholder="اسم المستخدم" >
+        <mat-error *ngIf="_LoginForm.invalid">{{getUserNameErrorMessage()}}</mat-error>
+        <mat-icon matSuffix > </mat-icon>
+      </mat-form-field>
+</div>
+
+
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="15px">
+    <mat-icon>
+        vpn_key
+    </mat-icon>
+    <mat-form-field class="wth100">
+
+        <input matInput class="wth100" formControlName="password" type="password" placeholder="كلمة المرور" [type]="hide ? 'password' : 'text'">
+        <a matSuffix mat-icon-button (click)="hide = !hide">
+            <mat-icon  >{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </a>
+
+        <mat-error *ngIf="_LoginForm.invalid">{{getPasswordErrorMessage()}}</mat-error>
+      </mat-form-field>
+
+</div>
+
+
+<button mat-raised-button color="accent" type="submit" [disabled]="!_LoginForm.valid" >
+  تسجيل الدخول
+</button>
+
+
+
+
+</form>

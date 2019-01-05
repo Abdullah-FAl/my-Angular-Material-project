@@ -1,0 +1,281 @@
+body{
+
+  font-family: 'Helvetica Neue', Helvetica, Arial;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+
+
+  width: 100%;
+
+}
+
+
+
+@media screen{
+  body{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: stretch;
+flex-wrap:  wrap;
+margin: 0 auto;
+
+  }
+  header{
+    order: 1;
+  }
+  section{
+order: 2;
+
+
+
+  }
+  footer{
+order: 3;
+
+  }
+
+}
+
+
+
+.toolbar{
+margin: 0 auto;
+  display: flex;
+  flex-direction: row ;
+  justify-content:  space-between;
+  align-items: center ;
+  align-self: center;
+  align-content: center;
+  
+
+
+
+height: 180px;
+width: 100%;
+
+border: solid slategray 10px;
+border-top:0px;
+border-right: 0px;
+border-left: 0px; 
+}
+
+
+.offis{
+order: 1;
+font-size: 1.15em;
+font-style: normal;
+font-weight: 400;
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-align: center;
+padding-right: 30px;
+width: 30%; 
+margin: auto;
+}
+
+
+.logo > img{
+  margin: auto;  /* Magic! */
+
+}
+
+.logo{
+  order: 2;
+  height: 100%; /* Or whatever */
+  margin: 0 auto;  /* Magic! */
+
+}
+.detals{
+
+
+  order: 3;
+
+  font-size: 1.15em;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+text-align: center;  
+
+
+width: 30%;  /* Or whatever */
+
+  margin: auto;  /* Magic! */
+
+  
+}
+
+
+
+
+.ReportTitle{
+font-size: 2rem;
+text-align: center; 
+
+}
+.ReportSupTitle{
+
+  padding-right: 30px;
+  font-size: 1.25em;
+
+
+}
+
+.ReportDetails{
+
+  display: flex;
+  flex-direction: row; 
+  flex-flow:  wrap;
+flex: auto;
+  justify-content:  space-around;
+  align-items: space-around ;
+
+
+}
+
+.ReportDetails .cesi{
+
+
+}
+
+
+.ReportTable{
+text-align: center;
+margin:   auto;
+
+top: 10vh
+}
+
+
+
+
+
+.table{
+
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  display: table;
+
+
+
+
+}
+
+
+
+@media screen and (max-width: 580px){
+  .table{
+  display: block;
+  }
+}
+
+
+
+
+.row{
+  display: table-row;
+  background: #f6f6f6;
+}
+
+
+.row2{
+  display: table-header-group;
+  font-size: 12px;
+  background: #f6f6f6;
+}
+
+
+
+  .row:nth-of-type(odd){
+    background: #e9e9e9;
+  }
+
+
+  .header{
+    font-weight: 900;
+    color: #ffffff;
+    background: #ea6153;
+  }
+
+  .color1{
+
+    background: #2730ae
+  
+  }
+
+
+.header{
+
+      padding: 0;
+      height: 6px;
+}
+      .cell{
+        display: none;
+      }
+    .cell{
+      margin-bottom: 10px;
+    }
+    
+
+
+.cell{
+  padding: 6px ;
+  font-size: 12px;
+  display: table-cell;
+  
+}
+
+
+
+
+footer{
+ text-align: center;
+
+
+height: 64px;
+width: 100%;
+color: #ffffff;
+background-color: #1f2836;
+padding-right: 30px;
+}
+
+
+.fotlin{
+background-color: honeydew;
+width: 100px;
+height:64px;
+}
+
+
+
+@media print {
+	
+
+	
+	body{
+  -webkit-print-color-adjust: exact;
+ 
+	color-adjust: exact;
+	right:0mm;
+	left: 0mm;
+	margin: 0mm  auto;
+}
+
+
+
+.header{
+    page-break-after : avoid;
+	page-break-inside: avoid;
+   
+   }
+.row {
+	page-break-after : avoid;
+	page-break-inside: avoid;
+}
+
+
+   
+
+
+
+}

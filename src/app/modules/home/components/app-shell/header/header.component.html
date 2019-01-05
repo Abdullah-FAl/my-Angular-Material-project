@@ -1,0 +1,43 @@
+<header>
+
+  <mat-toolbar  class="mat-elevation-z4" color="primary"  fxLayout="row" fxLayoutAlign="space-between  center" fxLayoutGap="15px" style="padding: 0px 16px 0px 0px;">
+
+
+    <div class="log" >
+
+        <img  src="assets/icons/logo/app-logo.svg" width="64px" height="64px"  alt="The Logo">
+
+    </div>
+
+    <div  fxLayout="column" fxLayoutAlign="space-between  center"   fxFlex>
+      <h2 class="title">
+        نظام الإستبيان
+      </h2>
+
+      <span *ngIf="setting | async let s ;else nodata" >
+
+        {{s.CustomerName }}
+
+         </span>
+
+
+           <ng-template #nodata>
+
+            <span >
+
+              الجهة
+
+               </span>
+           </ng-template>
+
+
+    </div>
+
+
+    <aloqbi-poll-nav-mnue></aloqbi-poll-nav-mnue>
+
+    <!-- <mat-icon  (click)="drawer.toggle()" color="accent">  &#xE8B8;   </mat-icon> -->
+
+
+  </mat-toolbar>
+</header>

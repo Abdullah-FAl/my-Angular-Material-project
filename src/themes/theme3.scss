@@ -1,0 +1,103 @@
+@import '~@angular/material/theming';
+
+
+// components mixin @import
+@import './components-mixin-import.scss';
+
+
+
+
+
+// Define a mixin that accepts a theme and outputs the theme-specific styles.
+@mixin G-theme-color($theme) {
+
+  @include G-theme-components($theme);
+
+}
+
+
+
+
+
+
+// Define a custom palette config for the app theme
+$app-primary3: mat-palette($mat-green,700);
+$app-accent3:  mat-palette($mat-orange, 400, 900, A100);
+$app-warn3:    mat-palette($mat-red);
+
+
+/*
+// Define a custom typography config that overrides the font-family as well as the
+// `headlines` and `body-1` levels.
+
+// $font-family:   'Roboto, "Helvetica Neue", sans-serif',
+// $display-4:     mat-typography-level(112px, 112px, 300),
+// $display-3:     mat-typography-level(56px, 56px, 400),
+// $display-2:     mat-typography-level(45px, 48px, 400),
+// $display-1:     mat-typography-level(34px, 40px, 400),
+// $headline:      mat-typography-level(24px, 32px, 400),
+// $title:         mat-typography-level(20px, 32px, 500),
+// $subheading-2:  mat-typography-level(16px, 28px, 400),
+// $subheading-1:  mat-typography-level(15px, 24px, 400),
+// $body-2:        mat-typography-level(14px, 24px, 500),
+// $body-1:        mat-typography-level(14px, 20px, 400),
+// $caption:       mat-typography-level(12px, 20px, 400),
+// $button:        mat-typography-level(14px, 14px, 500),
+// // Line-height must be unit-less fraction of the font-size.
+// $input:         mat-typography-level(16px, 1.125, 400)
+
+
+*/
+
+
+
+// Define a custom typography config that overrides the font-family as well as the
+$app-theme-typography3: mat-typography-config(
+
+  $font-family:  'Droid Arabic Kufi',
+  $headline: mat-typography-level(32px, 48px, 700),
+  $body-1: mat-typography-level(16px, 24px, 400)
+
+
+);
+// add custom typography config to theme
+@include mat-core($app-theme-typography3);
+
+$app-theme3: mat-light-theme($app-primary3, $app-accent3, $app-warn3);
+
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+
+.app-theme3 {
+  @include angular-material-theme($app-theme3);
+  @include G-theme-color($app-theme3);
+}
+
+
+
+
+
+
+
+
+
+
+
+@include mat-core($app-theme-typography3);
+$app-primary3: mat-palette($mat-green,700);
+$app-accent3:  mat-palette($mat-orange, 400, 900, A100);
+$app-warn3:    mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$app-theme3-dark: mat-dark-theme($app-primary3, $app-accent3, $app-warn3);
+
+
+.app-theme3-dark{
+
+  @include angular-material-theme($app-theme3-dark);
+  @include G-theme-color($app-theme3-dark);
+
+}
+

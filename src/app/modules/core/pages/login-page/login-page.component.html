@@ -1,0 +1,86 @@
+
+
+       <mat-toolbar color="primary" class="uzc">
+
+
+
+
+
+        </mat-toolbar>
+
+
+
+<section class="lognform"  fxLayout="row" fxLayoutAlign="center center" dir="rtl" >
+
+
+<mat-card  class="mat-elevation-z6">
+
+
+<mat-toolbar color="primary" >
+    <div style="margin:10px; padding: 10px;"  >
+        <button mat-fab color="accent"[routerLink]="['/']" routerLinkActive="router-link-active"  >
+          <mat-icon>
+              arrow_forward
+          </mat-icon>
+        </button>
+    </div>
+    <mat-card-title>
+        تسجيل الدخول
+        </mat-card-title>
+
+
+</mat-toolbar>
+
+<br>
+<br>
+<div fxLayout="column" fxLayoutAlign="center center">
+
+
+
+    <div fxLayout="column" fxLayoutAlign="center center">
+
+        <img class="logo"  src="assets/icons/logo/app-logo.svg" width="150px" height="150px"  alt="The Logo">
+
+        <h4>
+
+          نظام الإستبيانات
+
+        </h4>
+
+</div>
+
+
+
+</div>
+<mat-divider></mat-divider>
+
+<br >
+<br class="br">
+<aloqbi-poll-login-form (FormValue)="login($event)"  ></aloqbi-poll-login-form>
+
+
+<br class="br">
+<br >
+
+<mat-divider></mat-divider>
+
+<footer fxLayout="row" fxLayoutAlign="space-between center" style="padding:10px ;">
+    <b>
+        جميع الحقوق محفوظة لمؤسسة العقبي  التجارية المحدودة
+    </b>
+
+
+
+    2018 ©
+
+
+
+</footer>
+
+</mat-card>
+
+
+
+
+
+</section>
