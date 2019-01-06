@@ -10,7 +10,7 @@ import { Subscription } from 'rxjs';
 
 
 @Component({
-  selector: 'aloqbi-adil-sw-login-page',
+  selector: 'tset-angular-material-sw-login-page',
   templateUrl: './login-page.component.html',
   styleUrls: ['./login-page.component.scss']
 })

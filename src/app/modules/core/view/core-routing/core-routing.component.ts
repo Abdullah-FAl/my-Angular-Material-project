@@ -4,7 +4,7 @@ import { AuthService } from '../../authentication/auth/auth.service';
 
 
 @Component({
-  selector: 'aloqbi-adil-sw-core-routing',
+  selector: 'tset-angular-material-sw-core-routing',
   templateUrl: './core-routing.component.html',
   styleUrls: ['./core-routing.component.scss']
 })

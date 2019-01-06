@@ -9,8 +9,6 @@ import { RoutingComponent } from './view/routing/routing.component';
 import { HeaderComponent } from './components/app-shell/header/header.component';
 import { FooterComponent } from './components/app-shell/footer/footer.component';
 import { NavMnueComponent } from './components/app-shell/nav-mnue/nav-mnue.component';
-import { MinApiService } from '../shared/services/min-api/min-api.service';
-
 
 @NgModule({
   imports: [
@@ -21,7 +19,7 @@ import { MinApiService } from '../shared/services/min-api/min-api.service';
 
     MaterialComponentsModule
   ],
-  providers:[MinApiService],
+  providers: [],
 
   declarations: [WelcomeComponent, RoutingComponent, HeaderComponent, FooterComponent, NavMnueComponent]
 })

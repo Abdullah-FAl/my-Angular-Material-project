@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'aloqbi-adil-sw-footer',
+  selector: 'tset-angular-material-sw-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss']
 })

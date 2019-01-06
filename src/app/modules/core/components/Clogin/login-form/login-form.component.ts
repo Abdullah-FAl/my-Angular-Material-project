@@ -6,7 +6,7 @@ import { FormBuilder, FormGroup, FormControl, Validators,  } from '@angular/form
 
 
 @Component({
-  selector: 'aloqbi-adil-sw-login-form',
+  selector: 'tset-angular-material-sw-login-form',
   templateUrl: './login-form.component.html',
   styleUrls: ['./login-form.component.scss']
 })
