@@ -2,7 +2,7 @@ import { Component,OnInit } from '@angular/core';
 import {Event, Router, NavigationStart, NavigationEnd, NavigationCancel, NavigationError } from '@angular/router';
 
 @Component({
-  selector: 'aloqbi-adil-sw-root',
+  selector: 'tset-angular-material-sw-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

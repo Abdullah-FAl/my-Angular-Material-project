@@ -3,7 +3,7 @@
   <mat-toolbar  class="mat-elevation-z4" color="primary"  fxLayout="row" fxLayoutAlign="space-between  center" fxLayoutGap="15px" style="padding: 0px 16px 0px 0px;">
 
 
-    <div class="logo" >
+    <div  >
 
         <img  src="assets/icons/logo/app-logo.svg" width="64px" height="64px"  alt="The Logo">
 
@@ -14,27 +14,20 @@
         Abdullah-Fal
       </h2>
 
-      <span *ngIf="setting | async let s ;else nodata" >
+      <span *ngIf="setting | async let s;" >
 
         {{s}}
 
          </span>
 
 
-           <ng-template #nodata>
 
-            <span >
-
-              الجهة
-
-               </span>
-           </ng-template>
 
 
     </div>
 
 
-    <aloqbi-poll-nav-mnue></aloqbi-poll-nav-mnue>
+    <tset-angular-material-sw-nav-mnue (SidenavOpen)="Sidenav.toggle()" ></tset-angular-material-sw-nav-mnue>
 
     <!-- <mat-icon  (click)="drawer.toggle()" color="accent">  &#xE8B8;   </mat-icon> -->
 

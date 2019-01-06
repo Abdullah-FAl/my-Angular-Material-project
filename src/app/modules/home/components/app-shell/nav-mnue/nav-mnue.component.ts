@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'tset-angular-material-sw-nav-mnue',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavMnueComponent implements OnInit {
 
-  constructor() { }
+  @Output() SidenavOpen: EventEmitter<any> = new EventEmitter();
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  menuNav() {
+    this.SidenavOpen.emit();
   }
 
 }

@@ -1,4 +1,4 @@
-<nav fxLayout="row" fxLayoutAlign="space-between  center" >
+<nav fxLayout="row" fxLayoutAlign="space-between  center" fxShow fxHide.md="true"  fxHide.sm="true" fxHide.xs="true" fxHide.xl="false" fxHide.lg="false" >
   <button mat-button [routerLink]="['/Welcome']" routerLinkActive="router-link-active">
 
     Home
@@ -17,3 +17,12 @@
 
 
 </nav>
+
+
+<nav fxLayout="row" fxShow fxHide.md="false"  fxHide.xs="false" fxHide.xl="true" fxHide.lg="true" fxLayoutAlign="space-between  center"   >
+    <button mat-icon-button (click)="menuNav()" >
+
+      <mat-icon aria-label="icon-button"    >menu</mat-icon>
+    </button>
+
+  </nav>

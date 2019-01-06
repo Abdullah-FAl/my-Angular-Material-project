@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'aloqbi-adil-sw-routing',
+  selector: 'tset-angular-material-sw-routing',
   templateUrl: './routing.component.html',
   styleUrls: ['./routing.component.scss']
 })

@@ -12,7 +12,7 @@ import { map } from 'rxjs/operators';
 })
 export class HeaderComponent implements OnInit {
   @Input() Sidenav: MatSidenav;
-  setting:Observable<string>;
+  setting: Observable<string>;
     constructor() { }
 
     ngOnInit() {
