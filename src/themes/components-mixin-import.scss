@@ -15,15 +15,6 @@
 @mixin G-theme-components($theme) {
   $primarylg: map-get($theme, primary);
   $accentlog: map-get($theme, accent);
-
-  .st0{clip-path:url(#SVGID_2_);}
-  .st1{opacity:0.79;clip-path:url(#SVGID_4_);}
-  .st2{clip-path:url(#SVGID_6_);fill:#0764AB;}
-  .st3{clip-path:url(#SVGID_4_);fill:#F7D20D;}
-  .st4{clip-path:url(#SVGID_4_);fill:#FFFFFF;}
-  .st5{fill:#0764AB;}
-
-
   @include login-page($theme);
   @include welcome-header($theme);
 
